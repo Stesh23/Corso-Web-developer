@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Schema.org</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+     <style>
+       ul {list-style-type: none;
+           padding:20px;
+          } 
+       nav {font-family: sans-serif;
+            text-decoration: none;
+           }
+       ul a {text-decoration: none;
+            } 
+       li {display: inline-block;
+           width: 120px;
+           color:black
+          } 
+       li .attivo {color: darkred;
+                  }
+       li:hover {text-decoration: underline dotted;
+                 color:black;          
+                }
+       li:visited {color:black;
+                  }         
+       .attivo:hover {color:darkred; 
+                        }
+       .attivo:visited {color:darkred; 
+                          } 
+       @font-face {font-family: "Manrope", serif;
+                   src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+                   font-weight: weight;
+                   font-style: normal;
+                  } 
+       span {color:darkred;
+            }
+       p {column-count: 2;
+          font-size:16px;
+          font-family:'Manrope', serif;
+         }
+       h1 {font-size: 34px;
+           font-family: 'Manrope', serif;     
+          }  
+       h1 , p {margin-left: 200px;
+               margin-right: 200px;
+               text-align: justify;
+              }
+       hr {color:darkred;
+          } 
+       .link {text-decoration: none;
+             }
+       .link:hover {text-decoration: underline dotted;}
+      
+     </style>         
+    </head>
+    <body>
+    <nav>
+      <ul>
+       <li><a class="attivo" href="#"><strong>Schema.org</strong></a></li> 
+       <li><a href="#"><strong>Docs</strong></a></li>
+       <li><a href="#"><strong>Schemas</strong></a></li>
+       <li><a href="#"><strong>Validate</strong></a></li>
+       <li><a href="#"><strong>About</strong></a></li>
+      </ul>  
+      <hr> 
+    </nav><br><br>
+    <header>
+      <h1>
+        <span>Schema.org </span>is a collaborative, community<br> activity with a mission 
+          to create, maintain,<br> and promote schemas for structured data on<br> the 
+          Internet, on web pages, in email<br> messages, and beyond. 
+      </h1>  
+    </header>
+    <div>
+     <p>
+      Schema.org vocabulary can be used with many different encodings, including RDFa, 
+      Microdata and JSON-LD. These vocabularies cover entities, relationships between 
+      entities and actions, and can easily be extended through a well-documented extension 
+      model. As of 2024, over 45 million web domains markup their web pages with over 450 
+      billion Schema.org objects. Many applications from Google, Microsoft, Pinterest, Yandex
+      and others already use these vocabularies to power rich, extensible experiences.<br><br>
+      Founded by Google, Microsoft, Yahoo and Yandex, Schema.org vocabularies are developed 
+      by an open <a class="link" href="#"style="color:darkred">community</a> process, using the 
+      <a class="link" href="#"style="color:darkred">public-schemaorg@w3.org</a> mailing list and through 
+      <a class="link" href="#"style="color:darkred">GitHub</a>. A shared vocabulary makes it easier for 
+      webmasters and developers to decide on a schema and get the maximum benefit for their efforts. 
+      It is in this spirit that the founders, together with the larger community have come 
+      together - to provide a shared collection of schemas.<br><br> <strong>We invite you to
+      <a class="link" href="#"style="color:darkred"> get started</a>!<br> <br>View our 
+      <a class="link" href="#"style="color:darkred">blog at blog.schema.org</a> or see 
+      <a class="link" href="#"style="color:darkred"> release history</a> for version 28.1.</strong>
+     </p>   
+    </div>
+
+        <script src="" async defer></script>
+    </body>
+</html>
