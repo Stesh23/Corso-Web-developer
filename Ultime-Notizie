@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ultime notizie</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+  .inter-tight {font-family: "Inter Tight", serif;
+                font-optical-sizing: auto;
+                font-weight: weight;
+                font-style: normal;
+               }
+
+ .boxgrande {height: 300px;
+             width: 1000px;
+             border: solid 1px black;
+             margin: auto;
+             font-family: 'Inter Tight';
+             min-width: 200px;
+             min-height: 50px;
+            } 
+ li {display: inline;
+     height: 130px;
+     width: 200px;
+     border:solid 1px gray;
+     float: left;
+     padding: 6px;
+     border-radius: 10px;
+     margin-right: 25px;
+     font-size: 14px;
+    }
+ mark {background-color: darkorange;
+      }
+ span {color: gray;
+      }
+ h3 {color: black;
+     font-size: 30px;
+     margin-left: 40px;
+    }
+ u {color: darkorange;
+   }
+ a {text-decoration: none;
+    color: black;
+   } 
+ a:hover {text-decoration: underline;
+          font-size: 16px;
+         }
+ .link:hover {text-decoration: overline;
+              font-size: 36px;
+             }  
+ a:visited {color:burlywood;
+           }
+ .link:visited {color:darkkhaki;
+               } 
+</style>
+</head>
+<body>
+ <div class="boxgrande">
+  <h3><a href="#" class="link"><u>Ultime notizie</u></a></h3>
+   <ul><strong>
+    <li><a href="#"><span>NAPOLI</span><br><br><mark>11:46</mark>  Incessurato e<br> insospettabile, in casa<br>
+              produce cocaina rosa e<br> ketamina: 45enne arrestato<br> a Giuliano</a>
+    </li>
+    <li><a href="#"><span>ESTERI</span><br><br><mark>11:38</mark>  Ucraina, truppe nord<br> coreane richiamate dal<br>
+              fronte in Russia, Seul:<br> "Troppe perdite"</a>
+    </li>
+    <li><a href="#"><span>INNOVAZIONE</span><br><br><mark>11:36</mark>  I conti della Fenice<br> Srl di Chiara Ferragni:<br>
+              perchè ora si parla di rosso<br> e aumento del capitale</a>
+    </li>
+    <li><a href="#"><span>ATTUALITA'</span><br><br><mark>11:35</mark>  Genitori fanno causa<br> alla scuola dopo bocciatura<br>
+              del figlio ma il TAR li<br> condanna: dovranno<br> pagare 2mila euro</a>
+    </li>
+   </strong></ul>
+ </div>
+    
+</body>
+</html>
