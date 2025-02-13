@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fai rumore con noi</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+  .inter-tight {font-family: "Inter Tight", serif;
+                font-optical-sizing: auto;
+                font-weight: weight;
+                font-style: normal;
+               }
+  
+ .box {height: 350px;
+       width: 1000px;
+       border: solid black 1px;
+       min-width: 100px;
+       margin: auto;
+       border-radius: 20px;
+      }
+ img {height: 300px;
+      width: 550px;
+      min-width: 100px;
+     border-top-left-radius: 20px;
+     }
+ .titolo {float: right;
+          position: absolute;
+          bottom: 630px;
+          padding: 20px;
+          font-size: 26px;
+          min-height: 80px;
+          right: 220px;
+         
+         } 
+ span {font-size: 46px;
+      }       
+ mark {background-color: black;
+       opacity: 70%;
+       color:white;       
+      } 
+ .sottotitolo {position: absolute;
+               float: left;
+               left:230px;
+               top:150px;
+               color:white;
+               font-size: 30px;
+               min-width: 200px;
+              }
+ a {text-decoration: none;
+    color:black;
+   }
+ .link {text-decoration: none;
+        color: white;
+       }
+ a:visited {color: darkred;
+           }
+ .link:visited {color:cadetblue;
+               }
+ a:hover {color:darkgoldenrod;
+          text-decoration: underline;
+          font-size:38px;
+         }
+ .link:hover {color: cornflowerblue;
+              text-decoration: overline;
+              font-size: 50px;
+             }
+ hr {position: absolute;
+     float:right;
+     left:790px;
+     top: 295px;
+    }
+ img:hover {height: 350px;
+            width: 565px;
+            border-bottom-left-radius: 20px;
+           }           
+</style>    
+</head>
+<body>
+ <div class="box">  
+  <div class="immagine">
+    <a href="#"><img src="https://staticfanpage.akamaized.net/wp-content/uploads/2025/01/GM_PODCAST-ART.jpg"></a>
+  </div>
+  <div class="titolo">
+    <h3><a href="#">Perchè è importante abbonarsi a<br> Fanpage.it</a>
+    </h3>
+  </div>
+  <div class="sottotitolo">
+    <h4><mark><a href="#" class="link">FAI RUMORE<br> <span>CON NOI</a></mark></span></h4>
+  </div> 
+  <hr align="right" width="415" size="1" style="border: dashed" color="lightgrey">   
+ </div> 
+</body>
+</html>
