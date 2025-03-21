@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hardware</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+     <style>
+     body {background-color: black}
+     @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+     .familjen-grotesk-uniquifier {font-family: "Familjen Grotesk", sans-serif;
+                                   font-optical-sizing: auto;
+                                   font-weight: weight;
+                                   font-style: normal;
+                                  }
+      div {width: 1400px;
+            height: 1000px;
+            border: solid 2px black;
+            margin: auto;
+           } 
+      img {width: 1400px;
+           height: 1000px;
+           animation-name: immagine;
+           animation-duration: 6s;
+           margin-top: 20px;
+          }
+      p {position: absolute;
+         color: white;
+         margin-top: 60px;
+         font-size: 22px;
+         margin-top: 80px;
+         text-align: center;
+         margin-left: 40px;
+         margin-right: 60px;
+         font-family: "Familjen Grotesk", sans-serif;
+        }
+      h1 {position: absolute;
+          color:white;
+          margin-left: 400px;
+          font-size: 60px;
+          margin-top: 10px;
+          font-family: "Familjen Grotesk", sans-serif;
+         }  
+      @keyframes immagine {
+                            0% {margin-top: -1000px;}
+                          }    
+     </style>    
+    </head>
+    <body>
+      <div>
+       <h1>Una macchina da corsa</h1> 
+       <p>Arriva a tutta velocità M4, il chip Apple di ultima generazione che apre
+          la strada a Apple Intelligence su iPad Pro, rendendo più facile scrivere,
+          creare e fare tutto ciò che vuoi, con prestazioni eccezionali in un
+          dispositivo incredibilmente sottile e leggero. Il nuovissimo motore del display
+          porta sullo schermo un livello di precisione mai visto, con colori brillanti
+          e una luminosità straordinaria. La potente GPU sfrutta il ray tracing con
+          accelerazione hardware per spingere la grafica al massimo. E grazie al Neural
+          Engine del chip M4, iPad Pro è una forza della natura con l’AI.</p>
+       <img src="https://img.technews.tw/wp-content/uploads/2024/05/10075443/Apple-M4-chip-800x450.jpg">
+      </div>
+    </body>
+</html>
