@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Display</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+         body {background-color: black;
+              }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        .roboto-uniquifier {font-family: "Roboto", sans-serif;
+                            font-optical-sizing: auto;
+                            font-weight: weight;
+                            font-style: normal;
+                            font-variation-settings:
+                            "wdth" 100;
+                           }
+
+
+         div {width: 1400px;
+              height: 900px;
+              margin: auto;
+             }
+         img {width: 1400px;
+              height: 900px;
+              animation-name: display;
+              animation-duration: 2s;
+              margin-top: 180px;
+              transition-timing-function: ease-in-out;
+             }
+         p {position: absolute;
+            font-size: 22px;
+            text-align: center;
+            margin-top: 100px;
+            margin-left: 40px;
+            margin-right: 60px;
+            font-family: "Roboto", sans-serif;
+            color: white;
+           }
+         h1 {position: absolute;
+             font-size: 60px;
+             margin-left: 300px;
+             margin-top: 10px;
+             color: white;
+            }
+        @keyframes display {
+                            0% {margin-top: -10000px;}
+                            50%{margin-top: -4000px;}
+                           }   
+        </style>
+    </head>
+    <body>
+     <div>
+      <h1>
+        Il display più evoluto al mondo
+      </h1>
+      <p>
+         Il nuovo display Ultra Retina XDR introduce la rivoluzionaria tecnologia
+         OLED tandem. Luminosità estrema, contrasto incredibilmente preciso e
+         tecnologie evolute come ProMotion e True Tone ti regalano un’esperienza
+         visiva spettacolare. E puoi usarlo anche in modalità Riferimento, un aiuto
+         essenziale quando ti serve una grande accuratezza cromatica.
+      </p>
+      <img src="https://hd2.tudocdn.net/1158049?w=1200&h=900">
+     </div> 
+    </body>
+</html>
