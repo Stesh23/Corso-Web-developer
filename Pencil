@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pencil</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+          body {background-color:black;
+               }
+          img {width: 1400px;
+               height: 1000px;
+               animation-name: pencil;
+               animation-duration: 8s;
+               margin-top: 10px;
+              }
+          h1 {color: white;
+              font-size: 60px;
+              margin-left: 300px;
+             }
+          p {color: white;
+             font-size: 22px;
+             text-align: center;
+             margin-left: 40px;
+             margin-right: 60px;
+            }
+        @keyframes pencil {
+                           0%{filter:opacity(0%);}
+                           50%{filter:opacity(40%);}
+                          }
+        </style>
+    </head>
+    <body>
+     <div>
+      <h1>
+        Creata per creare senza limiti
+      </h1>
+      <img src="https://www.ispazio.net/wp-content/uploads/2024/05/apple-pencil-pro-ombra-digitale-ispazio-770x433.jpg">
+      <p>
+        Disegna, dipingi, prendi appunti: Apple Pencil rende tutto più intuitivo,
+        più facile, quasi magico. È precisa all’ultimo pixel, ha una bassa latenza,
+        cambia il tratto in base all’inclinazione, e mentre la usi puoi appoggiare 
+        la mano sullo schermo proprio come faresti su un foglio. E la nuova 
+        Apple Pencil Pro ti aiuta a dare vita alle tue idee con funzioni ancora più evolute.
+      </p>
+     </div>  
+    </body>
+</html>
