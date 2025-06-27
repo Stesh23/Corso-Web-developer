@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcolo detrazione IVA</title>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+ .fascinate-inline-regular {font-family: "Fascinate Inline", system-ui;
+                            font-weight: 400;
+                            font-style: normal;
+                           }
+ @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+ .crimson-text-semibold-italic {font-family: "Crimson Text", serif;
+                                font-weight: 600;
+                                font-style: italic;
+                               }
+ body {background-repeat: no-repeat;
+       background-size: cover;
+      }
+ .overlay {position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color:rgba(255,255,255,0.3);
+           z-index: 0;
+          }
+ .navbar .menu li {display: inline-block;
+                   padding: 14px 20px;
+                   font-size: 22px;
+                   color: black;              
+                  } 
+ .navbar {position: relative;
+          z-index: 1;
+         }  
+ .calcolo {text-decoration: none;
+           color: black; 
+          }
+ .calcolo:hover {color: #96D38A;
+                 padding: 18px 25px;
+                }
+ .intro {font-size: 26px;
+         font-family: "Crimson Text";
+         text-align: center;
+         margin-left: 2%;
+        }
+ .IVA {background-color: white;
+       width: 40%;
+       height: 200px;
+       margin-left: 30%;
+       margin-top: 5%;
+       border-radius: 5%;
+       filter: opacity(80%);
+       border: 1px black solid;
+       overflow: auto;
+      }
+ h1 {text-align: center;
+     font-size: 40px;
+     color: blue;
+     font-family: "Fascinate Inline";
+     margin-top: 0%;
+    }
+ .meno {margin-left: 2%;
+        margin-top: 2%;
+        background-color: black;
+        color: white;
+        border-radius: 20%;
+       }
+ .più {margin-left: 55%;
+       background-color: black;
+       color: white;
+       border-radius: 20%;
+      }
+ p {font-size: 22px;
+    margin-left: 5%;
+    margin-top: 10%;
+   }
+ @media (max-width:380px) {
+                     .IVA {width: 80%;
+                           height: 200px;
+                          }
+                     .meno, .più {display: block;      
+                                  margin: 10px auto;   
+                                  width: 80%; 
+                                 } 
+                     p {margin-top: 10%;
+                       }   
+ }
+  h2 {text-align: center;
+      color: black;
+      font-size: 20px;
+     }
+ .facebook {margin-left: 5%;
+             position: absolute;
+             display: inline-block;
+             margin-top: 4%;
+             margin-bottom: 2%;
+            }
+  .instagram {position: absolute;
+              display: inline-block;
+              margin-top: 4%;
+              margin-left: 30%;
+              margin-bottom: 2%;
+             }
+  .tiktok {position:absolute;
+           display: inline-block;
+           margin-top: 4%;
+           margin-left: 60%;
+           margin-bottom: 2%;
+          }
+  .twitter {position: absolute;
+            display: inline-block;
+            margin-top: 4%;
+            margin-left: 90%;
+            margin-bottom: 2%;
+           }
+ .social {margin-top: 5%;
+         }
+</style>
+</head>
+<body background="https://www.casartigianisassari.it/images/IVA-22-.jpg">
+ 
+ <nav class="navbar">
+  <ul class="menu">
+   <li><a class="calcolo" href="#">Home</a></li>
+   <li><a class="calcolo" href="#">Calcolo IVA al 10%</a></li>
+   <li><a class="calcolo" href="#">Servizi</a></li>
+   <li><a class="calcolo" href="#">Calcolo IVA al 4%</a></li>
+  </ul>
+ </nav>
+ <div class="overlay"></div>
+
+ <p class="intro"><b>Benvenuto nel calcolatore IVA!<br> Questo strumento ti permette di aggiungere o sottrarre
+                  l'IVA al 22% in modo facile e veloce. Che tu sia un privato o un professionista, puoi 
+                  calcolare il prezzo lordo o netto in pochi secondi. Inserisci l'importo e lascia che il 
+                  calcolatore faccia il resto!</b></p>
+ <div class="IVA">
+  <h1>Calcolo Iva</h1>
+  <p id="risultato"></p>
+  <button class="meno" onclick="scorporaIVA()">Scorporiamo l'IVA</button>
+  <button class="più" onclick="calcolaIVA()">Inseriamo l'IVA</button>
+ </div>
+ <div class="social">
+  <h2><b>Seguici sui nostri social</b></h2>
+  <a href="#"><img class="facebook" src="https://static.vecteezy.com/system/resources/previews/023/741/208/non_2x/facebook-logo-icon-social-media-icon-free-png.png" alt="Facebook" width="30" height="30"></a>
+  <a href="#"><img class="instagram" src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/26354.png" alt="Instagram" width="30" height="30"></a>
+  <a href="#"><img class="tiktok" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPda-z09VVkQ9UbCT2FdVYOUd-_Ny1JhbJ6fodopyPF99mkCNChpFDwWBUe10HJcv06rM&usqp=CAU" alt="TikTok" width="30" height="30"></a>
+  <a href="#"><img class="twitter" src="https://img.freepik.com/vettori-gratuito/nuovo-design-dell-icona-del-logo-x-di-twitter-del-2023_1017-45418.jpg?semt=ais_items_boosted&w=740" alt="Twitter" width="30" height="30"></a> 
+ </div>
+<script>
+ function scorporaIVA() {
+ var prezzo = prompt("Per favore inserisci il prezzo del tuo prodotto"," ")
+ prezzo /= 1.22;
+ prezzo = prezzo.toFixed(2);
+ document.getElementById("risultato").innerHTML=("Il tuo prezzo senza iva al 22% è: "+ prezzo + "€");
+ }
+ function calcolaIVA() {
+ var prezzo = prompt("Per favore inserisci il prezzo del tuo prodotto"," ")
+ prezzo *= 1.22;
+ prezzo = prezzo.toFixed(2);
+ document.getElementById("risultato").innerHTML=("Il tuo prezzo con iva al 22% è: "+ prezzo + "€");
+ }
+</script>
+</body>
+</html>  
