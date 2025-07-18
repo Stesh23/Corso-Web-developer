@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vero o Falso</title>
+ <style>
+  table tr td {border: solid 1px red;
+               background-color: white;
+               padding-left: 3px;
+              }
+  .vero {color: green;
+         font-size: 28px;
+        }
+  .falso {color: red;
+          font-size: 28px;
+         }
+  td {font-size: 24px;
+     }
+  h1 {font-size: 50px;
+      text-align: center;
+      color: white;
+     }
+  table {margin-left: 22%;
+        }
+  body {background-color: black;}
+ </style>
+</head>
+<body>
+ <h1> Vero o Falso?</h1>
+ <table>
+  <tr>
+    <td>Michael Schumacher ha vinto 7 titoli mondiali di Formula 1.</td>
+    <td><button class="vero">Vero</button></td>
+    <td><button class="falso">Falso</button></td>
+  </tr>
+  <tr>
+   <td>Nel basket, una partita ufficiale si gioca su tre tempi da 15 minuti.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>In "Dragon Ball", Vegeta è il padre di Gohan.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>La Ferrari ha sede a Maranello, in Italia.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>Cristiano Ronaldo ha giocato nella squadra del Barcellona.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>In "One Piece", il sogno di Luffy è diventare il Re dei Pirati.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>La 24 Ore di Le Mans è una gara che si svolge negli Stati Uniti.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>In "Naruto", il potere della Volpe a Nove Code è sigillato in Sasuke.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>Il Tour de France è una competizione di ciclismo.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>Ayrton Senna ha vinto il suo primo titolo mondiale nel 1994.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+ </table>
+</body>
+</html>
