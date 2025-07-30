@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vero o Falso</title>
+ <style>
+  
+  body {background: linear-gradient(to right, #141e30, #243b55);
+        color: #ffffff;
+        padding-bottom: 50px;
+        font-family: 'Inter', sans-serif;
+       }
+  table tr td {border: none;
+               background-color: white;
+               color: black;
+               padding: 16px;
+               border-radius: 8px;
+               box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+               margin-bottom: 10px;
+              }
+.vero, .falso {padding: 10px 20px;
+               border: none;
+               border-radius: 6px;
+               font-size: 18px;
+               cursor: pointer;
+               transition: 0.2s ease;
+              }
+.vero {background-color: #4CAF50;
+       color: white;
+      }
+.falso {background-color: #F44336;
+        color: white;
+       }
+.vero:hover {background-color: #45a049;
+            }
+.falso:hover {background-color: #d32f2f;
+             }
+
+h1 {font-size: 48px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 40px;
+   }
+
+  td {font-size: 24px;
+     }
+ table {margin: 0 auto;
+        border-spacing: 10px;
+        max-width: 900px;
+        width: 100%;
+       }
+ </style>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<body>
+ <h1> Vero o Falso?</h1>
+ <table>
+  <tr>
+    <td>Michael Schumacher ha vinto 7 titoli mondiali di Formula 1.</td>
+    <td><button class="vero">Vero</button></td>
+    <td><button class="falso">Falso</button></td>
+  </tr>
+  <tr>
+   <td>Nel basket, una partita ufficiale si gioca su tre tempi da 15 minuti.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>In "Dragon Ball", Vegeta è il padre di Gohan.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>La Ferrari ha sede a Maranello, in Italia.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>Cristiano Ronaldo ha giocato nella squadra del Barcellona.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>In "One Piece", il sogno di Luffy è diventare il Re dei Pirati.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>La 24 Ore di Le Mans è una gara che si svolge negli Stati Uniti.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>In "Naruto", il potere della Volpe a Nove Code è sigillato in Sasuke.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>Il Tour de France è una competizione di ciclismo.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+  <tr>
+   <td>Ayrton Senna ha vinto il suo primo titolo mondiale nel 1994.</td>
+   <td><button class="vero">Vero</button></td>
+   <td><button class="falso">Falso</button></td> 
+  </tr>
+ </table>
+ <script>
+   const risposteCorrette = [ "vero" , "falso" , "falso" , "vero" , "falso" , "vero" , "falso" , "falso" , "vero" , "falso"
+                            ];
+   let punteggio = 0;
+   let risposteDate = 0;
+   const righe = document.querySelectorAll("table tr");
+   const punteggioDisplay = document.getElementById("punteggio");
+   const bottoneRicomincia = document.getElementById("ricomincia");
+   righe.forEach((riga, index) => {
+      const bottoni = riga.querySelectorAll("button");
+   bottoni.forEach((bottone) => {
+   bottone.addEventListener("click", () => {
+   if (bottoni[0].disabled) return;
+   bottoni.forEach(btn => btn.disabled = true);
+   const rispostaUtente = bottone.classList.contains("vero") ? "vero" : "falso";
+   const corretta = risposteCorrette[index];
+   const messaggio = document.createElement("td");
+   messaggio.style.fontSize = "24px";
+   messaggio.style.fontWeight = "bold";
+   messaggio.style.color = rispostaUtente === corretta ? "green" : "red";
+   messaggio.textContent = rispostaUtente === corretta ? "Risposta corretta ✅" : "Mi dispiace risposta sbagliata ❌";
+   riga.appendChild(messaggio);
+   if (rispostaUtente === corretta) {
+       punteggio++;
+         }
+   risposteDate++;
+   if (risposteDate === 10) {
+          const finalMsg = document.createElement("div");
+          finalMsg.style.textAlign = "center";
+          finalMsg.style.color = "white";
+          finalMsg.style.fontSize = "28px";
+          finalMsg.style.marginTop = "40px";
+          finalMsg.innerHTML = `
+            <p>🎯 Hai completato il quiz!</p>
+            <p>✅ Risposte corrette: ${punteggio}</p>
+            <p>❌ Risposte sbagliate: ${10 - punteggio}</p>
+           `;
+          document.body.appendChild(finalMsg);
+         }
+      });
+   });
+});
+    bottoneRicomincia.addEventListener("click", () => {
+    location.reload();
+  });
+ </script>
+</body>
+</html>
