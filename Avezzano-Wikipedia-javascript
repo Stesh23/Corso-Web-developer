@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avezzano Wikipedia</title>
+    <style>
+     h1 {text-align: center;
+         font-size: 28px;
+        }
+     span {color: blue; 
+          }
+     .blue {color: blue;
+           }
+     img {width: 400px;
+          height: 300px;
+          margin-left: 900px;
+          display: inline-block;
+          position: relative; 
+         }
+    </style>
+</head>
+<body>
+ <div>
+    <h1><b>AVEZZANO</b></h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Wiki_Loves_Earth_Italy_monte_Salviano.jpg/1920px-Wiki_Loves_Earth_Italy_monte_Salviano.jpg">
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p class="blue" id="demo4"></p>
+ </div>
+ <script>
+    document.getElementById("demo").innerHTML = "<b>Avezzano</b> (in <span> dialetto Marsicano:  /aved͡zˈd͡zanə/</span>) è un <span>comune italiano</span> di oltre <br> 40 000 abitanti della <span>provincia dell'Aquila</span>, in <span>Abruzzo</span>.";
+    document.getElementById("demo1").innerHTML = "Elevati a rango di<span>città</span> con <span>decreto del presidente della Republica</span> del 21 <br>giugno 1994, è documento per la prima volta con chiarezza Nel IX secolo. il centro urbano si è <br>sviluppato a cominciare dal <span>riordino amministrativo francese</span> e ancora più verso la fine del XIX secolo in <br>seguito al prosciugamento del lago <span>Fucino</span>, anticamente situato al centro della <span>Marsica</span>."
+    document.getElementById("demo2").innerHTML = "La città, quasi completamente distrutta dal <span>terremoto del 1915</span>, è decorata con la <span>medaglia d'argento al <br>merito civile</span> poichè nel 1944, pochi anni dopo la ricostruzione, subì gravi danni a causa dei <br><span>bombardamenti</span> aerei anglo-americani e atti di violenza con le rappresaglie <span>nazifasciste</span>.";
+    document.getElementById("demo3").innerHTML = "A vocazione agricola, oltre che industriale e commerciale, costituisce un nodo geografico stradale e <br>ferroviario nell'area <span>appenninica</span> dell'Italia centro-meridionale.";
+    document.getElementById("demo4").innerText = "Leggi la voce - Tutte le voci in vetrina";
+ </script>
+</body>
+</html>
