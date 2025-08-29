@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Avezzano wikipedia più bottone</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"/>
+        <style>
+         body {background-color: blanchedalmond;
+               animation-name: pagina;
+               animation-duration: 3s;
+               animation-fill-mode: forwards;
+              }
+         h1 {text-align: center;
+             font-size: 28px;
+             margin-top: -10%;
+            }
+         .contenitore {align-items: flex-start;
+                       height: 550px;
+                       width: 100%;
+                       flex-wrap: nowrap;
+                       background-color: peru;
+                       border-radius: 2%;
+                       margin-top: 10%;
+                       perspective: 2000px;
+                      }
+         table {border-collapse: collapse; 
+                margin-left: 2%;
+               }
+         td {border: 2px solid black;
+             vertical-align: top;
+             width: 50%;
+            }
+         span {color: blue; 
+              }
+         .blue {color: blue;
+               }
+         img {margin-top: 10%;
+              width: 70%;
+              height: auto;
+              margin-left: 15%;
+             }
+         .btn {margin-left: 47%;
+               margin-top: 10%;
+              }
+         .paragrafo {margin-top: 10%;
+                     margin-left: 1%;
+                     white-space: nowrap;
+                     font-size: 14px;
+                     overflow: auto;
+                    }
+         .page1 {background-color: bisque;
+                 animation-name: sinistra;
+                 animation-duration: 8s;
+                 animation-fill-mode: forwards;
+                 transform-origin: right center;
+                }
+         .page2 {background-color: bisque;
+                 animation-name: destra;
+                 animation-duration: 8s;
+                 animation-fill-mode: forwards;
+                 transform-origin: left center;
+                }
+         @keyframes pagina {
+                            0%{filter: opacity(0%);
+                              }
+                            50%{filter: opacity(50%);
+                               }
+                            100%{filter: opacity(100%);
+                                }
+                           }
+         @keyframes sinistra {
+                              0%{transform:rotateY(90deg);
+                                }
+                              30%{transform: rotateY(90deg);
+                                 }
+                              100%{transform: rotateY(0deg);
+                                  }
+                             }
+         @keyframes destra {
+                            0%{transform: rotateY(90deg);
+                              }
+                            30%{transform: rotateY(90deg);
+                               }
+                            100%{transform: rotateY(0deg);
+                                }
+                           }
+         @media (max-width: 768px) {
+                                    table, tr {height: auto;
+                                               width: 100%;
+                                               display: flex;
+                                               flex-direction: row;       
+                                              }
+                                     td {width: 50%;           
+                                         height: auto;
+                                        }
+                                    img {width: 90%;      
+                                         margin: 0 auto;  
+                                         display: block;
+                                        }
+                                    .paragrafo {margin-top: 5%;
+                                                font-size: 16px;  
+                                                white-space: normal; 
+                                               }
+                                    .contenitore {width: 100%;
+                                                  height: auto;
+                                                  margin-top: 50%;
+                                                 }
+                                    h1 {margin-top: -50%;
+                                        text-align:center
+                                       }
+                                    .btn {margin-top: 50%;
+                                          text-align:center
+                                         }
+                                   }
+        </style>
+    </head>
+
+    <body>
+        <button onclick="Info()" class="btn btn-info">Apri Info</button>
+        <div>
+         <h1><b>AVEZZANO</b></h1>
+        </div>
+        <div id="bottoneinfo"></div>
+        <div class="contenitore">
+        <table width="96%" height="550px">
+        <tr>
+         <td class="page1">
+        <div class="paragrafo">
+         <p id="demo"></p>
+         <p id="demo1"></p>
+         <p id="demo2"></p>
+         <p id="demo3"></p>
+         <p class="blue" id="demo4"></p>
+        </div>
+         </td>
+        <td class="page2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Wiki_Loves_Earth_Italy_monte_Salviano.jpg/1920px-Wiki_Loves_Earth_Italy_monte_Salviano.jpg">
+        </td>
+        </tr>
+        </table>
+        </div>
+        <header>
+        </header>
+        <main></main>
+        <footer>
+        </footer>
+        <script>
+        function Info() {
+         document.getElementById("demo").innerHTML = "<b>Avezzano</b> (in <span> dialetto Marsicano:  /aved͡zˈd͡zanə/</span>) è un <span>comune italiano</span> di oltre <br> 40 000 abitanti della <span>provincia dell'Aquila</span>, in <span>Abruzzo</span>.";
+         document.getElementById("demo1").innerHTML = "Elevati a rango di<span>città</span> con <span>decreto del presidente della Republica</span> del 21 <br>giugno 1994, è documento per la prima volta con chiarezza Nel IX secolo. il centro urbano si è <br>sviluppato a cominciare dal <span>riordino amministrativo francese</span> e ancora più verso la fine del XIX secolo in <br>seguito al prosciugamento del lago <span>Fucino</span>, anticamente situato al centro della <span>Marsica</span>."
+         document.getElementById("demo2").innerHTML = "La città, quasi completamente distrutta dal <span>terremoto del 1915</span>, è decorata con la <span>medaglia d'argento al <br>merito civile</span> poichè nel 1944, pochi anni dopo la ricostruzione, subì gravi danni a causa dei <br><span>bombardamenti</span> aerei anglo-americani e atti di violenza con le rappresaglie <span>nazifasciste</span>.";
+         document.getElementById("demo3").innerHTML = "A vocazione agricola, oltre che industriale e commerciale, costituisce un nodo geografico stradale e <br>ferroviario nell'area <span>appenninica</span> dell'Italia centro-meridionale.";
+         document.getElementById("demo4").innerText = "Leggi la voce - Tutte le voci in vetrina";
+         document.getElementById("bottoneinfo").innerHTML = onclick;
+        }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous">
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>
