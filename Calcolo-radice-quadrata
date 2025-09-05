@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo radice quadrata</title>
+</head>
+<body>
+ <h1>Calcolo radice quadrata</h1>
+  <p id="calcolo"></p>  
+ <script>
+  function radiceQuadrata(numero) {
+    if (numer0 < 2) {
+        return "errore: numero negativo";
+    }
+    return Math.sqrt(numero);
+  }
+  var radice = radiceQuadrata(126);
+  calcolo.innerHTML = radice;
+ </script>
+</body>
+</html>
