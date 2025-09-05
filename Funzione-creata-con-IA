@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzione intelligenza artificiale</title>
+</head>
+<body>
+<h1>Esempio di funzione con argomenti</h1>
+<p id="demo"></p>
+<script>
+function somma(a, b) {
+    return a + b;
+}
+let risultato = somma(7, 5);
+document.getElementById("demo").innerHTML = "La somma è: " + risultato;
+</script>
+
+</body>
+</html>
