@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creazione ogetto</title>
+ <style>
+  h1 {font-size: 46px;
+      text-align: center; 
+      color: red;
+     }
+  p {font-size: 22px;
+     
+    }
+ </style>
+</head>
+<body>
+ <h1>Modello auto</h1>
+  <p id="demo"></p>
+  <img src="https://accessoricarrozzeria.it/281688/paraurti-anteriore-bmw-3-e46-4-door-berlina-m3-look-cod-m-bm-3-46-f1sa-m-bm-3-46-f1sa.jpg">
+ <script>
+  auto = {modello:"BMW serie 3",motore:"E46",cavalli:"136cv",cilindrata:"1951",potenza:"100,0kw"};
+  demo.innerHTML = auto.modello + " " + auto.motore + " " + auto.cilindrata;
+ </script>  
+</body>
+</html>
