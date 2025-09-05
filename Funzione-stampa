@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzione stampa</title>
+</head>
+<body>
+ <h1>Funzione di stampa</h1>
+ <button onclick="stampa()"> Premi e vedi </button>
+ <p id="demo"></p>
+<script>
+ function testo() {
+    return BMW + X6;
+ }
+ function immagine() {
+    return "<img src='https://cdn-datak.motork.net/configurator-imgs/cars/it/800/BMW/X6/41509_SUV-5-DOORS/bmw-x6.png'>"
+ }
+ function stampa() {
+    document.getElementById("demo").innerHTML = testo() + immagine();
+ }
+</script>
+</body>
+</html>
