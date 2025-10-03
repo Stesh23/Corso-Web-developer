@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rivalutazione TFR</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <h1>Calcolo della Detrazione lavoro dipendente</h1>
+    <p>Reddito tra i 28000 e i 50000</p>
+    <input type="number" id="reddito" placeholder="Inserisci il TFR annuo lordo"><br><br>
+    <button onclick="calcolaora()">Calcola Rivalutazione</button>
+    <div id="risultato"></div>
+    <script> 
+    const a = 1910;
+    const b = 50000;
+    const c = 22000;
+    function calcola(reddito) {
+     let operazione_1 = b - reddito;
+     let operazione_2 = operazione_1 / c;
+     let operazione_finale = a * operazione_2;
+     return operazione_finale; 
+    }
+    function calcolaora() {
+    risultato.innerHTML = calcola(reddito) + " €";
+    }
+    </script>
+    </body>
+</html>
